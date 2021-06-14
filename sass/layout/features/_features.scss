@@ -1,0 +1,46 @@
+.section-features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    color:$title-black-color;
+    font-size: 36px;
+    line-height: 1.16;
+
+
+    &__list-item:nth-child(-n + 3){
+    margin-left: 0;
+    margin-right: $card-set-gap;
+}
+
+    &__title{
+    margin-bottom: 10px;
+    @include font(14px, 700, 16px);
+    color: $title-black-color;
+    text-transform: uppercase;   
+}
+    &__text{ 
+        color: $main-text-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    &__list-item{
+        width: 270px;
+    }
+
+    &__block-icon{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+
+}

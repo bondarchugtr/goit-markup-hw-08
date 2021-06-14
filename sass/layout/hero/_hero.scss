@@ -1,0 +1,23 @@
+.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $hero-background;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title{
+        @include font(44px, 700, 60px, $Fst:0.06em);
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: $primary-white-color;
+        text-transform: uppercase;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+}

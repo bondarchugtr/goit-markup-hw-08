@@ -1,0 +1,25 @@
+
+.logo{
+    display: block;
+    @include font($fs:26px, $fw:700, $lh:31px);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $logo-black-color;
+    font-family: 'Raleway', sans-serif;
+    animation: pulse 500ms 6 $cubic-bezier $time-function;
+
+    &__weblogo{
+        color: $accent-color;
+        @include font($fs:26px, $fw:700, $lh:31px);
+    }
+}
+
+    .logo-footer--white{
+        color: $primary-white-color;
+        animation: none ;
+    }
+
+    .logo-footer__logo{
+        padding: 0;
+        margin-bottom: 20px;
+    }

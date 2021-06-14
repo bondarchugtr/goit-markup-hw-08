@@ -1,0 +1,46 @@
+.footer{
+
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $hero-background; 
+
+
+    &__footer-block{
+        display: flex;
+        align-items: baseline;
+        }
+
+    &__address{
+
+        @include font(14px, 400, 24px);
+        display: block;
+        color: $primary-white-color;  
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 231px;
+    }
+
+    &__address-name, 
+    &__address-list &__address-list-item{
+
+        @include font(14px, 400, 24px);
+        margin-bottom: 9px;
+    }
+    
+    &__address-list-item:last-child{
+         margin-bottom: 0px;
+    }
+
+
+    &__address-list &__contacts{ 
+        color: $collor-rgb-footer; 
+        transition: color $time-function $cubic-bezier;
+
+    }
+
+    &__address-list &__contacts:hover,
+    &__address-list &__contacts:focus{ 
+        color: $accent-color; 
+    }
+}

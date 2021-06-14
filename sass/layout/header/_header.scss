@@ -1,0 +1,91 @@
+.header{
+    border-bottom: 1px solid $color-bottom;
+}  
+
+    .nav{
+        display: flex;
+        align-items: center;
+
+    &__style{
+         @include font(14px, 500, 16px, $ls: 0.02em);
+        color: $title-black-color;
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color $time-function $cubic-bezier;
+        }
+
+    &__list{
+        display: flex;
+        width: 294px;
+        left: 453px;
+        top: 32px;
+        }
+
+    &__list_margin{
+        margin-left: 93px;
+        }
+
+    &__list-item{
+        margin-right: 50px;
+        }
+
+    &__list-item:last-child{
+        margin-right: 0;
+        }
+
+    &__list-link:hover,
+    &__list-link:focus,
+    &__list-link:hover::after,
+    &__list-link:focus::after{ 
+        color:$accent-color;
+        }
+
+    &__list-contacts{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        }
+
+    &__list-item{
+        margin-right: 50px;
+        }
+
+    &__list-item:last-child{
+        margin-right: 0;
+        }
+
+    &__contacts{ 
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(14px, 500, 16px, $ls: 0.02em);
+        color: $main-text-color;
+        transition: color $time-function $cubic-bezier;
+        }
+
+    &__icon{
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+        transition: fill $time-function $cubic-bezier;
+
+        }
+
+    &__contacts:hover,
+    &__contacts:focus,
+    &__icon:focus,
+    &__icon:hover{
+        color: $accent-color; 
+        fill: $accent-color;
+        }
+    }
+
+
+
+   
+
+    
+  

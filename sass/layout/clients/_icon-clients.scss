@@ -1,0 +1,32 @@
+
+.clients__icon{
+        fill: $icon-social-color;
+        transition: fill $time-function $cubic-bezier;
+    
+
+
+&-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $icon-social-color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: border $time-function $cubic-bezier;
+    }
+
+    
+
+    &-link:hover,
+    &-link:focus{
+        border: 1px solid $accent-color;
+    }
+
+    &-link:hover &,
+    &-link:focus &{
+        fill: $accent-color;
+        
+    }
+    }

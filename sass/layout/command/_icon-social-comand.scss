@@ -1,0 +1,39 @@
+.command__icon-link{
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: $icon-social-color;
+    transition: background-color $time-function $cubic-bezier;
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
+
+    &:hover .command__icon,
+    &:focus .command__icon{
+        fill: $primary-white-color;
+    }
+}
+
+.command__social-list-icon:last-child{
+    margin-right: 0;
+}
+
+.command__social-list-icon{
+
+    margin-right: 10px;
+}
+
+
+.command__icon{
+    display: flex;
+    align-items:center;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill $time-function $cubic-bezier;
+}

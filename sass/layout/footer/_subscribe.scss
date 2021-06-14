@@ -1,0 +1,46 @@
+.subscribe{
+        display: block;
+        margin-left: 90px;
+
+    
+
+        .subscribe__input{
+
+        display: flex;
+        width: 358px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        color: $primary-white-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        transition: border-color $time-function $cubic-bezier;
+        }
+
+        &__input:hover,
+        &__input:focus{
+            border-color: $accent-color;
+            outline: none;
+
+        }}
+    
+        .button-submit__icon{
+
+        display: flex;
+        position: absolute;
+        align-items: center;
+    }
+    
+        .button-submit__input-icon{
+            display: block;
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    
+        .button-submit{
+            margin-left: 12px;
+        }
