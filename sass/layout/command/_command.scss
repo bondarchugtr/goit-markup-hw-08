@@ -1,59 +1,103 @@
 .command{
-    display: flex;
     padding-bottom: 94px;
     background-color: $background-card-color;
+        @media screen and (min-width:$desctop){
+            display: flex;
+                   
+}
+    
+        &__card-title{
+            @include font(16px, 500, 19px);
+            margin-top: 0;
+            margin-bottom: 10px;  
+            color: $logo-black-color;
+            text-align: center;
+        }
 
+        &__card-text{
+            @include font(16px, 400, 19px);
+            margin-top: 0;
+            text-align: center;
+        }
 
-&__title{
+        &__social-list{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+}
+
+.command__card{
+        display: block;
+        margin-top: 30px;
+   
+
+        @media screen and (min-width:$mobile){
+            padding-left: 122px;
+            padding-right: 122px;
+            padding-bottom: 24px;
+        }
+
+    @media screen and (min-width:$tablet){
+            padding-left: 74px;
+            padding-right: 74px;
+            padding-bottom: 24px;
+    }
+
+    @media screen and (min-width:$desctop){
+            padding-bottom: 30px;
+            padding-left: 32px;
+            padding-right: 32px;
+    }
+   
+}
+.command__title{
      @include font(36px, 700, 42px);
     text-align: center;
     margin-bottom: 50px;
     color: $title-black-color;
 }
 
- &__list{
-    display: flex;
-    margin-right: -30px;
-    margin-top: -30px;
-}   
+    .command__list{
 
-&__list-item{
-    margin-right: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
+            @media screen and (min-width:$tablet){
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -30px;
+            margin-top: -30px;
+            }
 
-      
-&__card-title{
-    @include font(16px, 500, 19px);
-    margin-top: 0;
-    margin-bottom: 10px;  
-    color: $logo-black-color;
-    text-align: center;
-}
+       @media screen and (min-width:$desctop){
+            margin-right: -30px;
+            margin-top: -30px;   
+        }
+            &-item{
+                @media screen and (min-width:$mobile){
+                        margin-top: 30px;
+                    }
 
-&__card-text{
-    @include font(16px, 400, 19px);
-    margin-top: 0;
-    text-align: center;
-}
+                @media screen and (min-width:$tablet){
+                width: 50%;
+                margin-right: 30px;
+                margin-top: 30px;
+                flex-basis: calc((100% - 60px) / 2);
+                }
+                 @media screen and (min-width:$desctop){
+                margin-right: 30px;
+                margin-top: 30px;
+                flex-basis: calc((100% - 120px) / 4);
+                }
 
-&__social-list{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+        }
 
-    display: flex;
-    justify-content: space-between;
-    padding-top: 16px;
+        &-item:last-child{
+            @media screen and (min-width:$desctop){
+            margin-right: 0;
+            }
+        }    
+    }
 
-}
 
-&__card{
-    display: block;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
 
-}

@@ -1,13 +1,31 @@
 .subscribe{
         display: block;
-        margin-left: 90px;
+        
+            @media screen and (min-width:$mobile){
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            @media screen and (min-width:$desctop){
+                margin-left: 90px;
+            }
+
+            &__input:hover,
+            &__input:focus{
+            border-color: $accent-color;
+            outline: none;
+
+        }
+
+}  
+
 
     
 
         .subscribe__input{
 
         display: flex;
-        width: 358px;
+        width: 450px;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 16px;
@@ -19,13 +37,6 @@
         background-color: transparent;
         transition: border-color $time-function $cubic-bezier;
         }
-
-        &__input:hover,
-        &__input:focus{
-            border-color: $accent-color;
-            outline: none;
-
-        }}
     
         .button-submit__icon{
 
@@ -42,5 +53,28 @@
         }
     
         .button-submit{
-            margin-left: 12px;
+
+
+            @media screen and (min-width:$mobile){
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                width: 200px;
+                height: 50px;
+            }
+         
+
         }
+
+        .subscribe__container{
+
+        //     @media screen and (min-width:$desctop){
+        //             text-align: center;
+        //     }
+        
+
+        //     @media screen and (min-width:$desctop){
+        //         display: flex;
+        //   }
+          }

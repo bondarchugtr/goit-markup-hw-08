@@ -1,15 +1,36 @@
 .footer{
-
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  
     background-color: $hero-background; 
+
+        @media screen and (min-width:$mobile){
+            text-align: center;
+            
+        }
+
+        @media screen and (min-width:$desctop){
+            display: flex;
+            padding-top: 60px;
+            padding-bottom: 60px;
+}
+  
 
 
     &__footer-block{
-        display: flex;
-        align-items: baseline;
+        
+         @media screen and (min-width:$mobile){
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+         }
+        @media screen and (min-width:$desctop){
+            display: flex;
+            align-items: baseline;
+            text-align: start;
+           
+            
         }
+}
 
     &__address{
 
@@ -18,7 +39,8 @@
         color: $primary-white-color;  
         margin-top: 0;
         margin-bottom: 0;
-        width: 231px;
+
+        // width: 231px;
     }
 
     &__address-name, 

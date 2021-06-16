@@ -1,12 +1,26 @@
 .footer__social-section{
-        width: 206px;
+        
+
+         @media screen and (min-width:$mobile){
+            text-align: center;
+            margin-top: 60px;
+         }
+
+         @media screen and (min-width:$desctop){
+            width: 206px;
         margin-left:70px;
         align-items: baseline;
+        
+         }
     
     }
 
     .footer__social-list{
-        display: flex;    
+        display: flex; 
+        
+         @media screen and (min-width:$mobile){
+            justify-content: center;
+         }
     }
 
     .footer__icon{
