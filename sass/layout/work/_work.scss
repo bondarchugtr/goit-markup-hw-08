@@ -1,9 +1,14 @@
 .work{
     padding-bottom: 94px; 
 
-    @media screen and (min-width:$mobile), (min-width:$tablet){
+    @media screen and (min-width:$mobile){
         display: none;
     }
+
+     @media screen and (min-width:$tablet){
+        display: none;
+     }
+
     @media screen and (min-width:$desctop){
         display: block;
     }

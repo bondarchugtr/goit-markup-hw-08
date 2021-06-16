@@ -8,10 +8,8 @@
 
      
     &__list-item{
-        
-
          @media screen and (min-width:$desctop){
-        width: 270px;
+            width: 270px;
         
         }
        
@@ -67,22 +65,18 @@
     }
       
     .features__list{
-        // @media screen and (min-width:$mobile){
-        //     margin-bottom: 30px;
-        // }
-
                
         @media screen and (min-width:$tablet){
                 display: flex;
                 flex-wrap: wrap;
-                margin-right: -30px;
+                margin-left: -30px;
                 margin-top: -30px;
                 
         }
 
         @media screen and (min-width:$desctop){
-                
-                margin-right: -30px;
+                display: flex;
+                margin-left: -30px;
                 margin-top: -30px;
         }
 
@@ -94,28 +88,21 @@
             
 
           @media screen and (min-width:$tablet){
-                width: 50%;
-                margin-right: 30px;
+              
+                margin-left: 30px;
                 margin-top: 30px;
                 flex-basis: calc((100% - 60px) / 2);
          
         } 
 
+
         @media screen and (min-width:$desctop){
-                
-                margin-right: 30px;
+                margin-left: 30px;
                 margin-top: 30px;
                 flex-basis: calc((100% - 120px) / 4);
          
         }
-
     } 
-
-        &-item:last-child{
-            
-           @media screen and (min-width:$desctop){
-               margin-right: 0;
-        }}
  } 
        
         

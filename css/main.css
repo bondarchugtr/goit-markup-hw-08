@@ -430,14 +430,15 @@ body {
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__list {
-    margin-right: -30px;
+    display: flex;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -450,8 +451,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .features__list-item {
-    width: 50%;
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -459,27 +459,15 @@ body {
 
 @media screen and (min-width: 1200px) {
   .features__list-item {
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__list-item:last-child {
-    margin-right: 0;
   }
 }
 
 .command {
   padding-bottom: 94px;
   background-color: #F5F4FA;
-}
-
-@media screen and (min-width: 1200px) {
-  .command {
-    display: flex;
-  }
 }
 
 .command__card-title {
@@ -513,6 +501,7 @@ body {
 .command__card {
   display: block;
   margin-top: 30px;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -554,14 +543,15 @@ body {
   .command__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command__list {
-    margin-right: -30px;
+    display: flex;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -579,8 +569,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .command__list-item {
-    width: 50%;
-    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -588,15 +579,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .command__list-item {
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .command__list-item:last-child {
-    margin-right: 0;
   }
 }
 
@@ -641,7 +626,13 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px), (min-width: 768px) {
+@media screen and (min-width: 480px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .work {
     display: none;
   }
