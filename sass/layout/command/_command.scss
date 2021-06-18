@@ -1,6 +1,7 @@
 .command{
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: $background-card-color;
+    
     
         &__card-title{
             @include font(16px, 500, 19px);
@@ -24,39 +25,56 @@
 }
 
 .command__card{
-        display: block;
-        margin-top: 30px;
-        text-align: center;
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+        
+        }
    
         @media screen and (min-width:$mobile){
+            .command__card{
             padding-left: 122px;
             padding-right: 122px;
-            padding-bottom: 24px;
+            padding-bottom: 24px;}
         }
 
     @media screen and (min-width:$tablet){
+        .command__card{
             padding-left: 74px;
             padding-right: 74px;
-            padding-bottom: 24px;
+            padding-bottom: 24px;}
     }
 
     @media screen and (min-width:$desctop){
+        .command__card{
             padding-bottom: 30px;
             padding-left: 32px;
-            padding-right: 32px;
+            padding-right: 32px;}
 
     }
    
-}
-.command__title{
-     @include font(36px, 700, 42px);
-    text-align: center;
-    margin-bottom: 50px;
-    color: $title-black-color;
-}
+
+    .command__title{
+        @include font(28px, 700, 33px);
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 60px;
+        color: $title-black-color;
+    }
+    @media screen and (min-width:$desctop){
+        .command__title{
+            @include font(36px, 700, 42px);
+            margin-bottom: 50px;
+            padding-top: 0;
+        }
+        
+    }
 
     .command__list{
-        
+
             @media screen and (min-width:$tablet){
                 display:flex;
                 flex-wrap: wrap;
@@ -71,19 +89,18 @@
         }
 
             &-item{
-
-                @media screen and (min-width:$mobile){
-                        margin-top: 30px;
-                    }
+                margin-bottom: 30px;
 
                 @media screen and (min-width:$tablet){
                 display: flex;
                 flex-wrap: wrap;
+                margin-bottom: 0;
                 margin-left: 30px;
-                margin-top: 30px;
+                margin-top: 30px;   
                 flex-basis: calc((100% - 60px) / 2);
                 }
                  @media screen and (min-width:$desctop){
+                margin-bottom: 0;
                 margin-left: 30px;
                 margin-top: 30px;
                 flex-basis: calc((100% - 120px) / 4);

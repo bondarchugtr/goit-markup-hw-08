@@ -9,16 +9,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
+        // width: 210px;
         height: 92px;
         border: 1px solid $icon-social-color;
         box-sizing: border-box;
         border-radius: 4px;
         transition: border $time-function $cubic-bezier;
-    }
-
-    
-
+     }
+     
     &-link:hover,
     &-link:focus{
         border: 1px solid $accent-color;
