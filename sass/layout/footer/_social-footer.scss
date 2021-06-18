@@ -1,26 +1,26 @@
 .footer__social-section{
         
-
-         @media screen and (min-width:$mobile){
             text-align: center;
             margin-top: 60px;
+            margin-top: 60px;
+       
+        @media screen and (min-width:$tablet){
+            margin-left: 165px;
          }
+
+
 
          @media screen and (min-width:$desctop){
             width: 206px;
-        margin-left:70px;
-        align-items: baseline;
+            margin-left:70px;
+            align-items: baseline;
+            margin-top: 0;
         
          }
-    
     }
-
     .footer__social-list{
         display: flex; 
-        
-         @media screen and (min-width:$mobile){
-            justify-content: center;
-         }
+        justify-content: center;
     }
 
     .footer__icon{
