@@ -4,9 +4,14 @@
     
 
     &__section{
-        @media screen and (min-width:$desctop){
-            display:flex;
-        }}
+        display:flex;
+
+            @media screen and (min-width:$desctop){
+                margin-left: 93px;
+                align-items: baseline;}
+    }
+        
+   
     }
 
 
@@ -15,19 +20,38 @@
         align-items: center;
         
     &__list_margin{
+
+            @media screen and (min-width:$tablet){
+                margin-left: 88px;
+            }
+
               @media screen and (min-width:$desctop){
-        margin-left: 93px;
+                margin-left: 93px;
     }
+            }
+              &__list-item--contacts{
+
+                     margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            @media screen and (min-width:$desctop){
+                margin-right: 30px;
+                margin-bottom: 0;
+                &:last-child{
+                    margin-right: 0;
+                }
+    
+            }
         }
 
     &__list-item{
-        @media screen and (min-width:$desctop){
-        margin-right: 50px;
-    }
+            margin-right: 50px;
+            
         }
 
     &__list-item:last-child{
-        
         margin-right: 0;
         }
 
@@ -39,16 +63,18 @@
         }
 
     &__list-contacts{
-        display: flex;
+        
+        display: block;
         align-items: center;
         margin-left: auto;
-        }
+        padding-top: 21px;
+        padding-bottom: 21px;
 
-    &__list-item{
         @media screen and (min-width:$desctop){
-        margin-right: 50px;
+                display: flex;
+            }
+
         }
-    }
 
     &__list-item:last-child{
         @media screen and (min-width:$desctop){
@@ -75,17 +101,21 @@
         }
 
     .nav__list{
-        // display: flex;
         width: 294px;
         left: 453px;
         top: 32px;
         display: none;
 
+         @media screen and (min-width:$tablet){
+                display: flex;
+                margin-left: 88px;
+            }
+    
+
               @media screen and (min-width:$desctop){
                 display: flex;
+            }
 }
-        }
-
         .nav__contacts{ 
         
         justify-content: center;
@@ -95,10 +125,13 @@
         transition: color $time-function $cubic-bezier;
         display: none;
 
-       @media screen and (min-width:$desctop){
-        display: flex;
+           @media screen and (min-width:$tablet){
+                display: block;
 } 
 
+            @media screen and (min-width:$desctop){
+                display: flex;
+} 
         }
 
     .nav__icon{
@@ -107,7 +140,7 @@
         margin-right: 10px;
         fill: currentColor;
         transition: fill $time-function $cubic-bezier;
-        display: none;
+        // display: none;
               @media screen and (min-width:$desctop){
             display: block;}
 

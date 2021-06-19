@@ -17,14 +17,10 @@
 
          text-align: center;
         
-        
            @media screen and (min-width:$tablet){
             display: flex;
+            justify-content: center;
             align-items: baseline;
-            margin-left: 76px;
-            margin-right: 89px;
-               
-            
             text-align: center;
                 
          }
@@ -51,7 +47,7 @@
         margin-bottom: 0;
 
         @media screen and (max-width:$tablet){
-         margin-bottom: 60px;;
+         margin-bottom: 60px;
     }
        @media screen and (min-width:$desctop){
         width: 231px;

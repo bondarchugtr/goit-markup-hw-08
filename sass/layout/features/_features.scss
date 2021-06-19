@@ -1,9 +1,9 @@
 .features{
 
-    padding-bottom: 60px;
-    color:$title-black-color;
-    font-size: 36px;
-    line-height: 1.16; 
+        padding-bottom: 60px;
+        color:$title-black-color;
+        font-size: 36px;
+        line-height: 1.16; 
         
     &__block-icon{
         display: flex;
@@ -22,12 +22,12 @@
     }
 
     .features__title{
-    margin-bottom: 10px;
-    @include font(14px, 700, 16px);
-    color: $title-black-color;
-    text-transform: uppercase;
-    text-align: center;
-    }
+        margin-bottom: 10px;
+        @include font(14px, 700, 16px);
+        color: $title-black-color;
+        text-transform: uppercase;
+        text-align: center;
+        }
 
     .features__title{
     @media screen and (min-width:$tablet){
@@ -48,19 +48,17 @@
     }
       
     .features__list{
-               
-        @media screen and (min-width:$tablet){
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -30px;
-            margin-top: -30px;
-        }
+        padding-top: 60px;
+    @media screen and (min-width:$tablet){
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
 
-        @media screen and (min-width:$desctop){
-                display: flex;
-                margin-left: -30px;
-                margin-top: -30px;
-        }
+    @media screen and (min-width:$desctop){
+        display: flex;
+        margin-left: -30px;
+    }
 
         &-item{
             margin-bottom: 30px;
@@ -70,21 +68,20 @@
             margin-top: 30px;}
             } 
 
-          @media screen and (min-width:$tablet){
-              &-item{
-              margin-bottom: 0;
-                margin-left: 30px;
-                margin-top: 30px;
-                flex-basis: calc((100% - 60px) / 2);}
-        
-
-
-        @media screen and (min-width:$desctop){
-            &-item{
+    @media screen and (min-width:$tablet){
+        &-item{
             margin-bottom: 0;
-                margin-left: 30px;
-                margin-top: 30px;
-                flex-basis: calc((100% - 120px) / 4);}
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc((100% - 60px) / 2);
+        }
+        
+    @media screen and (min-width:$desctop){
+        &-item{
+            margin-bottom: 0;
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc((100% - 120px) / 4);}
         }
     } 
  } 

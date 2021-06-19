@@ -34,7 +34,6 @@ body{
 .current{ 
     color: $accent-color; 
     transition: color $time-function $cubic-bezier;
-
     &::after{
     position: absolute;
     display: block;

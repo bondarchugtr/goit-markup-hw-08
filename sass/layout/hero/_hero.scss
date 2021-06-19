@@ -1,20 +1,67 @@
 .hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $hero-background;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("/images/hero/mobile-img.jpg");
+           
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),  url("/images/hero/mobile-img@2x.jpg");
+        }
+    
     
 
+    @media screen and (min-width:$tablet){
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url("/images/hero/table-img.jpg");
+  
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),  url("/images/hero/table-img@2x.jpg");
+        }
+    }
+
+    @media screen and (min-width:$desctop){
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url("/images/hero/hero.jpg");
+  
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),  url("/images/hero/hero@2.jpg");
+        }
+    }
+
+
+
+    
     &__title{
-        @include font(44px, 700, 60px, $Fst:0.06em);
+        @include font(26px, 900, 42px, $ls: 0.06em);
         margin-top: 0;
         margin-bottom: 30px;
         color: $primary-white-color;
         text-transform: uppercase;
+        @media screen and (min-width:$desctop) {
+            @include font(44px, 900, 60px, $ls: 0.06em);
+            
+        }
+
     }
 
     &__button{
