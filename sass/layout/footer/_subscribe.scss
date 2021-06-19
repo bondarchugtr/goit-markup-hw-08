@@ -1,33 +1,29 @@
 .subscribe{
-        display: block;
-        text-align: center;
+       text-align: center;
         margin-top: 60px;
 
          @media screen and (min-width:$desctop){ 
                margin-top: 0;
                text-align: start;
+               margin-left: 93px;
             }
 
             &__input:hover,
             &__input:focus{
                 border-color: $accent-color;
                 outline: none;
-            }
-        
-
-           
+            }       
 }
 
-.test{
-    margin-left: 93px;
-}
     .subscribe__container{
             @media screen and (min-width:$tablet){
                display: block;
             }
 
          @media screen and (min-width:$desctop){
-               display: flex;
+                display: flex;
+                justify-content: flex-end;
+                
             }
     }
 
@@ -48,14 +44,11 @@
 
         @media screen and (min-width:$tablet){
                
-                justify-content: center;
-                margin-left: 166px;
-                margin-right: 152px;
+               
                
         @media screen and (min-width:$desctop){
                 width: 358px;
                 justify-content: center;
-                margin-left: 93px;
                 margin-right: 0;
             }
         }
@@ -95,6 +88,4 @@
 
               
             }
-
-
         }

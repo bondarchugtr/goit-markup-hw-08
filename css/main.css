@@ -806,10 +806,15 @@ body {
 }
 
 .footer {
-  text-align: center;
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -820,14 +825,14 @@ body {
 
 .footer__footer-block {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__footer-block {
     display: flex;
-    justify-content: center;
     align-items: baseline;
+    margin-left: 76px;
+    margin-right: 89px;
     text-align: center;
   }
 }
@@ -835,7 +840,15 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__footer-block {
     display: flex;
+    text-align: start;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__block-desctop {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -849,6 +862,12 @@ body {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -883,8 +902,12 @@ body {
 
 .footer__social-section {
   text-align: center;
-  margin-top: 60px;
-  margin-top: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__social-section {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -952,7 +975,6 @@ body {
 }
 
 .subscribe {
-  display: block;
   text-align: center;
   margin-top: 60px;
 }
@@ -961,16 +983,13 @@ body {
   .subscribe {
     margin-top: 0;
     text-align: start;
+    margin-left: 93px;
   }
 }
 
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: #2196F3;
   outline: none;
-}
-
-.test {
-  margin-left: 93px;
 }
 
 @media screen and (min-width: 768px) {
@@ -982,6 +1001,7 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe__container {
     display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -1000,19 +1020,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe__input {
-    justify-content: center;
-    margin-left: 166px;
-    margin-right: 152px;
-  }
-}
-
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .subscribe__input {
     width: 358px;
     justify-content: center;
-    margin-left: 93px;
     margin-right: 0;
   }
 }

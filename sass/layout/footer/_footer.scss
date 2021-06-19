@@ -1,35 +1,45 @@
 .footer{
-
-        text-align: center;
+     
         background-color: $hero-background; 
         padding-top: 60px;
         padding-bottom: 60px;
 
+        @media screen and (min-width:$tablet){
+            display: flex; 
+        }
 
         @media screen and (min-width:$desctop){
-            display: flex;
-            
-           
-}
+            display: flex; 
+        }
   
 
     &__footer-block{
 
          text-align: center;
-            margin-bottom: 60px;
+        
         
            @media screen and (min-width:$tablet){
             display: flex;
-            justify-content: center;
             align-items: baseline;
+            margin-left: 76px;
+            margin-right: 89px;
+               
+            
             text-align: center;
                 
          }
 
         @media screen and (min-width:$desctop){
             display: flex;
+            text-align: start;
             margin: 0;
          
+        }
+}
+    &__block-desctop{
+        @media screen and (min-width:$desctop){
+            display: flex;
+            align-items: baseline;
         }
 }
     &__address{
@@ -39,9 +49,13 @@
         color: $primary-white-color;  
         margin-top: 0;
         margin-bottom: 0;
-@media screen and (min-width:$desctop){
-    width: 231px;
-}
+
+        @media screen and (max-width:$tablet){
+         margin-bottom: 60px;;
+    }
+       @media screen and (min-width:$desctop){
+        width: 231px;
+    }
 
     }
 

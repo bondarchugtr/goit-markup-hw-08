@@ -1,14 +1,14 @@
 .footer__social-section{
         
             text-align: center;
-            margin-top: 60px;
-            margin-top: 60px;
-       
+
+         @media screen and (min-width:$mobile){
+             margin-top: 60px;
+         }
+
         @media screen and (min-width:$tablet){
             margin-left: 165px;
          }
-
-
 
          @media screen and (min-width:$desctop){
             width: 206px;
@@ -65,4 +65,5 @@
         margin-top: 0;
         margin-bottom: 20px;
         color: $primary-white-color;
+      
     }
