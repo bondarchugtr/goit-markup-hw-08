@@ -1,5 +1,6 @@
 .form{
     flex-direction: column;
+    
 
     &__input-icon{
         display: block;
@@ -51,10 +52,15 @@
  
 
 .form__title{
-    @include font(20px, 700, 23px);
+    @include font(20px, 700, 30px);
     text-align: center;
     margin-bottom: 10px;
     color: $title-black-color;
+
+    @media screen and (min-width:$desctop){
+        @include font(20px, 700, 23px);
+        
+    }
 }
 
     

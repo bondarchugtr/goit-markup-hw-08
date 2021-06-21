@@ -60,10 +60,17 @@
 }
 
 &__checkbox-text{
-    @include font(14px, 400, 24px);
     display: inline-block;
     color: $main-text-color;
-    
+    @include font(12px, 400, 14px);
+ 
+   
+   
+
+    @media screen and (min-width:$desctop){
+        @include font(14px, 400, 24px);
+    }
+
 }
 
 &__checkbox-text-doc{

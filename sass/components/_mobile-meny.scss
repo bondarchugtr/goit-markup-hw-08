@@ -1,5 +1,5 @@
 .mobile-menu{
-    
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,64 +10,82 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity $time-function $cubic-bezier;
-    
-    @media screen and (min-width:$tablet){
-        display: none;}
+    overflow-x: scroll;
 
+    &.is-open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+            }
+
+    @media screen and (min-width:$tablet) {
+        display: none;
+    }
 
         &__close:hover &__icon,
         &__icon:hover,
         &__close:focus &__icon{
             fill: #2196F3;
 }
-}
-        .mobile-menu__container{
-            position: relative;
-            padding-top: 48px;
-            padding-bottom: 48px;
-        }
 
-        .mobile-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        }
+    &__container{
+                position: relative;
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
 
-
-    .mobile-menu__close{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 0;
-    top: 10px;
-    right: 0;
-    width: 40px;
-    height: 40px;
     
-    background: $primary-white-color;
-    border: transparent;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: $time-function $cubic-bezier;
+
+}
+
+     .mobile-menu__close{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0;
+        top: 10px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background: $primary-white-color;
+        border: transparent;
+        box-sizing: border-box;
+        transition: $time-function $cubic-bezier;
 }
 
 .mobile-menu__icon{
     width: 19px;
     height: 19px;
-    background-color: white;
     transition: fill $time-function $cubic-bezier;
 }
 
-.mobile-nav__style{
-    display:inline-block;
-   @include font(40px, 500, 47px, $ls: 0.02em);
+.mobile-menu__item{
+        display:block;
+        margin-bottom: 32px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+      
+
+
+
+
+    .mobile-nav__style{
+
+        @include font(40px, 500, 47px, $ls: 0.02em);
         color: $title-black-color;
         position: relative;
-        transition: color $time-function $cubic-bezier;
-        margin-bottom: 32px;
+
+       }
+}
+
+  .active{
+              color: $accent-color; 
+      
     }
+
 
 
 

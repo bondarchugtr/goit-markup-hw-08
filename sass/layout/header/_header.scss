@@ -35,16 +35,11 @@
         width: 24px;
         height: 16px;   
         transition: fill $time-function $cubic-bezier;
-
         }
-    
-        
-
 
     .nav{
         display: flex;
         align-items: center;
-        
         
     &__list_margin{
 
@@ -90,7 +85,6 @@
         }
 
     &__list-contacts{
-        
         
         align-items: center;
         display: none;
@@ -173,8 +167,8 @@
         margin-right: 10px;
         fill: currentColor;
         transition: fill $time-function $cubic-bezier;
-        // display: none;
+
               @media screen and (min-width:$desctop){
-            display: block;}
+                display: block;}
 
         }
