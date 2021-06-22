@@ -145,21 +145,21 @@
 }
         .nav__contacts{ 
         
-        justify-content: center;
-        align-items: center;
-        @include font(14px, 500, 16px, $ls: 0.02em);
-        color: $main-text-color;
-        transition: color $time-function $cubic-bezier;
-        display: none;
+            justify-content: center;
+            align-items: center;
+            @include font(14px, 500, 16px, $ls: 0.02em);
+            color: $main-text-color;
+            transition: color $time-function $cubic-bezier;
+            display: none;
 
-           @media screen and (min-width:$tablet){
-                display: block;
-} 
+            @media screen and (min-width:$tablet){
+                    display: block;
 
-            @media screen and (min-width:$desctop){
-                display: flex;
-} 
-        }
+                } 
+
+                @media screen and (min-width:$desctop){
+                    display: flex;
+    }           }
 
     .nav__icon{
         width: 16px;

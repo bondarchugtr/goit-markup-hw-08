@@ -2,11 +2,21 @@
 .logo{
     display: block;
     @include font($fs:26px, $fw:700, $lh:31px);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: $logo-black-color;
     font-family: 'Raleway', sans-serif;
     animation: pulse 500ms 6 $cubic-bezier $time-function;
+
+    @media screen and (min-width:$tablet){
+     padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+    @media screen and (min-width:$desctop){
+        padding-top: 24px;
+        padding-bottom: 25px;
+}
 
     &__weblogo{
         color: $accent-color;
