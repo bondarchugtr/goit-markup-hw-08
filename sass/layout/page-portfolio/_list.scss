@@ -48,7 +48,7 @@
 
 .portfolio__list{
 
-@media screen and (min-width:280px){
+@media screen and (max-width:479px){
     display: block;
     margin-bottom: 30px;
       &:last-child{
@@ -80,10 +80,11 @@
             display: flex;
             
 
-               @media screen and (min-width:280px){
+               @media screen and (max-width:768px){
                    margin-bottom: 30px;
                     margin-left: 0;
                     margin-top: 0;
+                    width: 100%;
            
     
         }

@@ -1253,7 +1253,7 @@ body {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (max-width: 479px) {
   .portfolio__list {
     display: block;
     margin-bottom: 30px;
@@ -1277,11 +1277,12 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (max-width: 768px) {
   .portfolio__list-item {
     margin-bottom: 30px;
     margin-left: 0;
     margin-top: 0;
+    width: 100%;
   }
 }
 
