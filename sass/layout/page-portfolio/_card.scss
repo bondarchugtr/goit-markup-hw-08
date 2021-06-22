@@ -23,6 +23,16 @@
     position: relative;
     overflow: hidden;
     
+
+    @media screen and (min-width:$tablet){
+        width: 354px;
+    }
+
+      @media screen and (min-width:$desctop){
+        width: 100%;
+    }
+
+
 } 
 
 .portfolio__link{

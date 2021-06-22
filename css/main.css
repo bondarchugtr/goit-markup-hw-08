@@ -1266,7 +1266,6 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
@@ -1336,6 +1335,18 @@ body {
   display: block;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__img-section {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__img-section {
+    width: 100%;
+  }
 }
 
 .portfolio__link {
