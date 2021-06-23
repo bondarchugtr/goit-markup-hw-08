@@ -3,7 +3,7 @@
         padding-bottom: 60px;
 
         &{
-    @media screen and (min-width:$desctop) {
+    @media screen and (min-width:$desktop) {
         padding-top: 94px;
         padding-bottom: 109px;
         }
@@ -19,7 +19,7 @@
         
         color: $title-black-color;
 
-         @media screen and (min-width:$desctop) {
+         @media screen and (min-width:$desktop) {
             @include font(36px, 700, 42px);
             margin-bottom: 50px;}
         }
@@ -42,7 +42,7 @@
                 margin-top: -30px;
             }
 
-             @media screen and (min-width:$desctop) {
+             @media screen and (min-width:$desktop) {
                 flex-wrap: nowrap;
                 
             }
@@ -67,7 +67,7 @@
             flex-basis: calc((100% - 3*30px) / 3);
         }
 
-        @media screen and (min-width:$desctop) {
+        @media screen and (min-width:$desktop) {
             margin-left: 30px;
             margin-top: 30px;
             flex-basis: calc((100% - 4*30px) / 5); }

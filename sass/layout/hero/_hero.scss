@@ -5,27 +5,25 @@
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-img.jpg');
     
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-img.jpg');
-           
 
-    @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2) and (max-width:767px),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),  url('../images/hero/mobile-img@2x.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-img@2x.jpg');
         }
     
     
-
     @media screen and (min-width:$tablet){
         
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url('../images/hero/table-img.jpg');
+    rgba(47, 48, 58, 0.4)), url('../images/hero/table-img.jpg');
   
 
-    @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2) and (min-width:$tablet),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image:linear-gradient(rgba(47, 48, 58, 0.4),
@@ -33,17 +31,17 @@
         }
     }
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url('../images/hero/hero.jpg');
   
 
-    @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2) and (min-width:$desktop),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),  url('../images/hero/hero@2.jpg');
         }
     }
@@ -57,7 +55,7 @@
         margin-bottom: 30px;
         color: $primary-white-color;
         text-transform: uppercase;
-        @media screen and (min-width:$desctop) {
+        @media screen and (min-width:$desktop) {
             @include font(44px, 900, 60px, $ls: 0.06em);
             
         }

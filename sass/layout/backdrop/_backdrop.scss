@@ -9,6 +9,7 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity $time-function $cubic-bezier;
+    overflow-y: scroll;
 
 
 
@@ -36,7 +37,7 @@
         width:450px;
     }
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         width:528px;
     }
         

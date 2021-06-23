@@ -14,7 +14,7 @@
         border-radius: 4px;
         transition: border $time-function $cubic-bezier;
 
-        @media screen and (min-width:$desctop){
+        @media screen and (min-width:$desktop){
             width: 172px;
             
         }

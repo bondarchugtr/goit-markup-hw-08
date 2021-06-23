@@ -16,7 +16,7 @@
     }
 
 }
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
            .features{
             padding-bottom: 94px;}
     }
@@ -55,7 +55,7 @@
         margin-left: -30px;
     }
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         display: flex;
         margin-left: -30px;
     }
@@ -76,7 +76,7 @@
             flex-basis: calc((100% - 60px) / 2);
         }
         
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         &-item{
             margin-bottom: 0;
             margin-left: 30px;

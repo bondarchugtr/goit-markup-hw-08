@@ -8,7 +8,7 @@
             display: flex; 
         }
 
-        @media screen and (min-width:$desctop){
+        @media screen and (min-width:$desktop){
             display: flex; 
         }
   
@@ -25,15 +25,15 @@
                 
          }
 
-        @media screen and (min-width:$desctop){
+        @media screen and (min-width:$desktop){
             display: flex;
             text-align: start;
             margin: 0;
          
         }
 }
-    &__block-desctop{
-        @media screen and (min-width:$desctop){
+    &__block-desktop{
+        @media screen and (min-width:$desktop){
             display: flex;
             align-items: baseline;
         }
@@ -49,7 +49,7 @@
         @media screen and (max-width:$tablet){
          margin-bottom: 60px;
     }
-       @media screen and (min-width:$desctop){
+       @media screen and (min-width:$desktop){
         width: 231px;
     }
 

@@ -57,7 +57,7 @@
     margin-bottom: 10px;
     color: $title-black-color;
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         @include font(20px, 700, 23px);
         
     }

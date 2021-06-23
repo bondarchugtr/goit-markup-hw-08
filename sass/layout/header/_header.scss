@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
 
-            @media screen and (min-width:$desctop){
+            @media screen and (min-width:$desktop){
                 align-items: baseline;}
     }
 
@@ -47,7 +47,7 @@
                 margin-left: 88px;
             }
 
-              @media screen and (min-width:$desctop){
+              @media screen and (min-width:$desktop){
                 margin-left: 93px;
     }
             }
@@ -58,7 +58,7 @@
                     margin-bottom: 0;
                 }
 
-            @media screen and (min-width:$desctop){
+            @media screen and (min-width:$desktop){
                 margin-right: 30px;
                 margin-bottom: 0;
                 &:last-child{
@@ -96,14 +96,14 @@
                 display: block;
             }
 
-        @media screen and (min-width:$desctop){
+        @media screen and (min-width:$desktop){
                 display: flex;
             }
 
         }
 
     &__list-item:last-child{
-        @media screen and (min-width:$desctop){
+        @media screen and (min-width:$desktop){
              margin-left: auto;
             margin-right: 0;
         }
@@ -139,7 +139,7 @@
             }
     
 
-              @media screen and (min-width:$desctop){
+              @media screen and (min-width:$desktop){
                 display: flex;
             }
 }
@@ -157,7 +157,7 @@
 
                 } 
 
-                @media screen and (min-width:$desctop){
+                @media screen and (min-width:$desktop){
                     display: flex;
     }           }
 
@@ -168,7 +168,7 @@
         fill: currentColor;
         transition: fill $time-function $cubic-bezier;
 
-              @media screen and (min-width:$desctop){
+              @media screen and (min-width:$desktop){
                 display: block;}
 
         }

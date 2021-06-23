@@ -1,5 +1,4 @@
 .container{
-    margin:0 auto;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -18,9 +17,9 @@
     }
     }
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         .container{
-        width: $desctop;
+        width: $desktop;
         margin: 0 auto;
     }
     }
