@@ -1329,18 +1329,6 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio__img-section {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__img-section {
-    width: 100%;
-  }
-}
-
 .portfolio__link {
   display: block;
   position: relative;

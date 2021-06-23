@@ -17,8 +17,8 @@ body{
 .list{
     margin: 0;
     padding: 0;
-    list-style: none
-
+    list-style: none;
+   
 }
 
 .link{
@@ -29,6 +29,7 @@ body{
     display: block;
     max-width: 100%;
     height: auto;
+    
 }
       .current{ 
         color: $accent-color; 
