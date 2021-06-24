@@ -32,16 +32,13 @@
     border-radius: 4px;
     
 
+        @media screen and (min-width:$mobile){
+            width:450px;
+        }
 
-    @media screen and (min-width:$mobile){
-        width:450px;
-    }
-
-    @media screen and (min-width:$desktop){
-        width:528px;
-    }
+        @media screen and (min-width:$desktop){
+            width:528px;
+        }
         
-
-
 }
 }   

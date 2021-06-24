@@ -26,7 +26,6 @@
 
 }
 
-
 &__icon-checkbox{
 
     display: flex;
@@ -62,14 +61,11 @@
 &__checkbox-text{
     display: inline-block;
     color: $main-text-color;
-    @include font(12px, 400, 14px);
- 
-   
-   
-
-    @media screen and (min-width:$desktop){
-        @include font(14px, 400, 24px);
-    }
+        @include font(12px, 400, 14px);
+    
+        @media screen and (min-width:$desktop){
+            @include font(14px, 400, 24px);
+        }
 
 }
 

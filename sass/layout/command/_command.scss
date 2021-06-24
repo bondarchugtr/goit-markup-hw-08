@@ -74,9 +74,7 @@
 
         @media screen and (min-width:280px){
                 display:block;
-                margin-bottom: 30px;
-                
-                }
+            }
 
         @media screen and (min-width:$tablet){
             display:flex;
@@ -85,14 +83,11 @@
             margin-top: -30px;
             }
 
-       @media screen and (min-width:$desktop){
-            display:flex;
-            margin-left: -30px;
-            margin-top: -30px;   
-        }
-
             &-item{
                 margin-bottom: 30px;
+                 &:last-child{
+                    margin-bottom: 0;
+                }
 
                 @media screen and (min-width:$tablet){
                     display: flex;
@@ -104,9 +99,6 @@
                 }
 
                  @media screen and (min-width:$desktop){
-                    margin-bottom: 0;
-                    margin-left: 30px;
-                    margin-top: 30px;
                     flex-basis: calc((100% - 120px) / 4);
                 }
 
