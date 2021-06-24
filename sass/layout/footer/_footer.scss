@@ -8,10 +8,6 @@
             display: flex; 
         }
 
-        @media screen and (min-width:$desktop){
-            display: flex; 
-        }
-  
 
     &__footer-block{
 
@@ -21,12 +17,10 @@
             display: flex;
             justify-content: center;
             align-items: baseline;
-            text-align: center;
-                
+            text-align: center;   
          }
 
         @media screen and (min-width:$desktop){
-            display: flex;
             text-align: start;
             margin: 0;
          
@@ -41,16 +35,16 @@
     &__address{
 
         @include font(14px, 400, 24px);
-        display: block;
-        color: $primary-white-color;  
-        margin-top: 0;
-        margin-bottom: 0;
+            display: block;
+            color: $primary-white-color;  
+            margin-top: 0;
+            margin-bottom: 0;
 
         @media screen and (max-width:$tablet){
-         margin-bottom: 60px;
+            margin-bottom: 60px;
     }
-       @media screen and (min-width:$desktop){
-        width: 231px;
+        @media screen and (min-width:$desktop){
+            width: 231px;
     }
 
     }

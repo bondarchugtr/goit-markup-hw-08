@@ -21,12 +21,12 @@
 
     &__block{
         padding-bottom: 94px;
-         display: none;}
+         display: none;
 
         @media screen and (min-width:$desktop){
-            &__block{
-            display: block;}  
+            display: block; 
         }
+    }
 }
     .work__title{
         margin-top: 0;
@@ -53,6 +53,6 @@
     }
     .work__list{
         @media screen and (min-width:$desktop){
-        display: flex;
-}
+            display: flex;
+        }
     }

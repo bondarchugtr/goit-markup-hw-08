@@ -2,13 +2,17 @@ body{
     color: $main-text-color;
     font-family: 'Roboto', sans-serif;
     background-color: $primary-white-color;
-} 
-    .body.modal-open{
-        overflow: hidden;
-    }
-    
 
-  
+    &.modal-open{
+        overflow: hidden; 
+
+         &-menu{
+        overflow: hidden;
+         }
+    }
+   
+} 
+    
 .text-title{
     margin-top:$marginTextTitle;
     margin-bottom: $marginTextTitle;
