@@ -46,7 +46,6 @@
     }
       
     .features__list{
-        padding-top: 60px;
 
             @media screen and (min-width:$tablet){
                 display: flex;
@@ -55,7 +54,6 @@
             }
 
         &-item{
-            margin-bottom: 30px;
 
                 @media screen and (min-width:$mobile){
                     margin-top: 30px;
