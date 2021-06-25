@@ -98,8 +98,6 @@
     display: flex;
     flex-wrap: wrap;
 
-
-
 }
 
 .mobile-menu__item-social{
@@ -109,7 +107,7 @@
     }
 }
 
-.test{
+.mobile-menu--current{
         &::after{
         content: "";
         position: absolute;
@@ -118,16 +116,14 @@
         transform: rotate(90deg) translateX(-1px);
         transform-origin: left top;
         margin-left: 10px;
-        
         }
-
     }
 
 .mobile-menu__item-link{
-    position: relative;
-    @include font(18px, 500, 22px, $ls: 0.02em);
-    color: $accent-color;
-}
+        position: relative;
+        @include font(18px, 500, 22px, $ls: 0.02em);
+        color: $accent-color;
+    }
 
 .mobile-nav__contacts-phone{
     @include font(34px, 500, 40px, $ls: 0.02em);

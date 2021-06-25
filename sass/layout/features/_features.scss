@@ -1,5 +1,5 @@
 .features{
-
+        padding-top: 60px;
         padding-bottom: 60px;
         color:$title-black-color;
         font-size: 36px;
@@ -56,7 +56,10 @@
         &-item{
 
                 @media screen and (min-width:$mobile){
-                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
 
                 }
 

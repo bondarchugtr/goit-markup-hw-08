@@ -122,8 +122,17 @@
             color: $title-black-color;
             position: relative;
             padding-top: 32px;
-            padding-bottom: 32px;
             transition: color $time-function $cubic-bezier;
+
+            @media screen and (min-width:$tablet){
+            padding-top: 32px;
+            padding-bottom: 37px;
+        }
+
+            @media screen and (min-width:$desktop){
+            padding-bottom: 32px;
+        }
+
         }
 
     .nav__list{

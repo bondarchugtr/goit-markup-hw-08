@@ -345,8 +345,20 @@ body.modal-open-menu {
   color: #212121;
   position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__style {
+    padding-top: 32px;
+    padding-bottom: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__style {
+    padding-bottom: 32px;
+  }
 }
 
 .nav__list {
@@ -422,13 +434,13 @@ body.modal-open-menu {
   }
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet-img.jpg");
   }
 }
 
-@media screen and (min-width: 479px) and (min-device-pixel-ratio: 2) and (min-width: 479px), screen and (min-width: 479px) and (min-resolution: 192dpi), screen and (min-width: 479px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-width: 481px), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet-img@2x.jpg");
   }
@@ -488,6 +500,7 @@ body.modal-open-menu {
 }
 
 .features {
+  padding-top: 60px;
   padding-bottom: 60px;
   color: #212121;
   font-size: 36px;
@@ -550,7 +563,10 @@ body.modal-open-menu {
 
 @media screen and (min-width: 480px) {
   .features__list-item {
-    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .features__list-item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1800,7 +1816,7 @@ body.modal-open-menu {
   margin-right: 0;
 }
 
-.test::after {
+.mobile-menu--current::after {
   content: "";
   position: absolute;
   width: 22px;
