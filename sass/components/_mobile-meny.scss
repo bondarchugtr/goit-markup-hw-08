@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background: #FFFFFF;
     opacity: 0;
     visibility: hidden;
@@ -33,6 +33,9 @@
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -78,13 +81,13 @@
 
        }
 }
-.mobile-menu_nav{
-    margin-bottom: 302px;
-}
+// .mobile-menu_nav{
+//     margin-bottom: 302px;
+// }
 
 .mobile-menu_contacts{
-    display: block;
     margin-bottom: 64px;
+    margin-top: auto;
 }
 
 .mobile-menu__item-contacts{

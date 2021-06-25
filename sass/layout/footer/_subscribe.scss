@@ -28,7 +28,7 @@
     }
 
         .subscribe__input{
-        display: flex;
+        
         width: 100%;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -40,9 +40,14 @@
         border-radius: 4px;
         background-color: transparent;
         transition: border-color $time-function $cubic-bezier;
-            
-               
+
+
+         @media screen and (min-width:$tablet){
+                width: 450px;
+            }
+
         @media screen and (min-width:$desktop){
+                display: flex;
                 width: 358px;
                 justify-content: center;
                 margin-right: 0;
